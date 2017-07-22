@@ -9,7 +9,7 @@ app=Flask(__name__)
 app.secret_key='hard_key'
 
 #redis数据库
-r=redis.StrictRedis(host='localhost',port=6379,db=1,decode_responses=True)
+r=redis.StrictRedis(host='127.0.0.1',port=6379,db=1,decode_responses=True)
 
 
 def event_stream():
